@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Abdul Wahab — XR Portfolio</title>
+  <meta name="description" content="Abdul Wahab — Unity / AR Developer. Portfolio: AR Business Card, AR Try-On, Product Showcase">
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;color-scheme:dark}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef6;background:linear-gradient(180deg,#071022 0%, #071026 100%)}
+    .wrap{max-width:980px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .brand{display:flex;flex-direction:column}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .project-hero{display:flex;gap:14px;align-items:center}
+    .project-thumb{width:220px;height:130px;border-radius:10px;background:#081223;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .project-thumb img{width:100%;height:100%;object-fit:cover}
+    .project-meta h2{margin:0 0 6px;font-size:1.1rem}
+    ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+    .buttons{display:flex;gap:10px;margin-top:12px}
+    a.btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;color:white;background:var(--accent)}
+    footer{margin-top:28px;color:var(--muted);font-size:.9rem}
+    .small{font-size:.87rem;color:var(--muted)}
+    .code{background:#021224;padding:10px;border-radius:8px;color:#80ffea;font-family:monospace}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 380px}.project-hero{flex-direction:column;align-items:flex-start}.project-thumb{width:100%;height:200px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021224">AW</div>
+      <div class="brand">
+        <h1>Abdul Wahab — Unity & AR Developer</h1>
+        <p class="lead">I build AR experiences: product showcases, brand activations, try-ons. Available for freelance.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Left: Projects + About -->
+      <div>
+        <section class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+            <div>
+              <h2 style="margin:0">AR Business Card — Brand Activation</h2>
+              <p class="small">A demo that turns a physical business card into an interactive AR experience (image tracking + 3D popup + links + analytics).</p>
+            </div>
+            <div style="text-align:right;color:var(--muted)">Demo • GitHub • Blog</div>
+          </div>
+
+          <div class="project-hero" style="margin-top:14px">
+            <div class="project-thumb">
+              <!-- Replace demo.gif with your actual demo gif or poster image inside /assets -->
+              <img src="assets/demo.gif" alt="AR Demo GIF" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'360\'><rect width=\'100%\' height=\'100%\' fill=\'%23081223\' /><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2388c6c2\' font-family=\'Arial\' font-size=\'18\'>Add assets/demo.gif</text></svg>'">
+            </div>
+
+            <div class="project-meta">
+              <h2>What it does</h2>
+              <ul>
+                <li>Image tracking on a printed business card</li>
+                <li>Animated 3D logo, clickable portfolio links</li>
+                <li>Firebase backend for scan analytics</li>
+              </ul>
+
+              <div class="buttons">
+                <a class="btn" href="#project">Read case</a>
+                <a class="btn" href="https://github.com/YOUR_GITHUB_USERNAME/ar-business-card-ar-foundation" target="_blank">View code</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Add more project cards here -->
+
+        <section class="card" style="margin-top:16px">
+          <h3 style="margin:0 0 6px">About me</h3>
+          <p class="small">BS(CS) 2016. Unity mobile dev since then. Learning AR & building portfolio projects to get freelance clients. I cover frontend (Unity) + backend (Firebase).</p>
+        </section>
+
+        <!-- Project detail anchor -->
+        <section id="project" class="card" style="margin-top:16px">
+          <h3 style="margin:0 0 6px">AR Business Card — Case Study</h3>
+          <p class="small">Short summary: scan, interact, track. Below are quick notes for clients and devs.</p>
+
+          <div style="margin-top:10px">
+            <strong>Tech:</strong>
+            <div class="small code" style="margin-top:6px">Unity • AR Foundation • Firebase (Firestore, Storage, Analytics)</div>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>How to demo</strong>
+            <ol class="small" style="margin-top:6px">
+              <li>Open the app on your phone</li>
+              <li>Point camera at printed business card</li>
+              <li>Watch 3D logo appear, tap links</li>
+            </ol>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn" href="mailto:you@yourdomain.com">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right: Quick links / Contact -->
+      <aside>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Quick Links</h4>
+          <div class="small"><strong>GitHub:</strong> <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">@YOUR_GITHUB_USERNAME</a></div>
+          <div class="small" style="margin-top:6px"><strong>Domain:</strong> abdulwahabxr.com</div>
+          <div class="small" style="margin-top:6px"><strong>Contact:</strong> <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin:0 0 8px">Want this setup?</h4>
+          <p class="small">Copy this file to index.html, replace placeholders, push to GitHub, then connect to Netlify (see instructions).</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4 style="margin:0 0 8px">Notes for deploy</h4>
+          <ul class="small" style="margin:0;padding-left:18px">
+            <li>Static single-file site — no build step required</li>
+            <li>Put media files under /assets and push with index.html</li>
+            <li>Netlify will auto-deploy when connected to GitHub</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="small" style="text-align:center">
+      Built by Abdul Wahab • <a href="https://github.com/YOUR_GITHUB_USERNAME" style="color:inherit;">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
